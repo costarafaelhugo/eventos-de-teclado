@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(bg.png);
+    background-size: cover;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#box {
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0 20px;
+    font-size: 4rem;
+    height: 100px;
+    color: #fff;
+    text-shadow: 0 0 20px #ff005b;
+    text-transform: uppercase;
+}
+
+#box:after {
+    content: attr(data-text);
+    position: absolute;
+    left: 200px;
+    top: 69px;
+    margin: 0;
+    padding: 0 20px;
+    z-index: 1;
+    filter: blur(.5px);
+    /* color: #ff005b;
+    
+    */
+}
+
+#box:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fe3a80;
+    z-index: -2;
+    opacity: .5;
+    filter: blur(40px);
+}
